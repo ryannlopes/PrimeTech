@@ -20,7 +20,8 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -128,7 +129,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" id="bgnavbar">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -139,8 +140,8 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar por..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control border-0 small" placeholder="Pesquisar por..."
+                                aria-label="Search" aria-describedby="basic-addon2" id="progressbar">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -151,7 +152,14 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
+                        <!-- TEMA -->
+                        <label id="labeldarkmode">
+                            <input type="checkbox" id="switch" class="check">
+                            <span class="check" >
+                                <span id="soldarkmode">🌞</span>
+                                <span id="luadarkmode">🌜</span>
+                            </span>
+                        </label>
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -215,7 +223,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0" id="textcolor">Dashboard</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Gerar PDF</a>
                     </div>
@@ -225,13 +233,13 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card border-left-primary shadow h-100 py-2" id="cardsmenores">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Entradas (Mês)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$12.021,89</div>
+                                            <div class="h5 mb-0 font-weight-bold"id="textcolor">R$12.021,89</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -243,13 +251,13 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card border-left-success shadow h-100 py-2" id="cardsmenores">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Entradas (Anaual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$215.151,00</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="textcolor">R$215.151,00</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -261,7 +269,7 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card border-left-info shadow h-100 py-2" id="cardsmenores">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
@@ -269,10 +277,10 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold" id="textcolor">50%</div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="progress progress-sm mr-2">
+                                                    <div class="progress progress-sm mr-2" id="progressbar">
                                                         <div class="progress-bar bg-info" role="progressbar"
                                                             style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
@@ -290,13 +298,13 @@
 
                         <!-- Pending Requests Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card border-left-warning shadow h-100 py-2" id="cardsmenores">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 Respostas Pendentes</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="textcolor">18</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -313,11 +321,11 @@
 
                         <!-- Area Chart -->
                         <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
+                            <div class="card shadow mb-4" id="cardsmenores">
                                 <!-- Card Header - Dropdown -->
                                 <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Lucros Anuais</h6>
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between" id="cardsmenores">
+                                    <h6 class="m-0 font-weight-bold">Lucros Anuais</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -337,11 +345,11 @@
 
                         <!-- Pie Chart -->
                         <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
+                            <div class="card shadow mb-4" id="cardsmenores">
                                 <!-- Card Header - Dropdown -->
                                 <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Controle de Gastos</h6>
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between" id="cardsmenores">
+                                    <h6 class="m-0 font-weight-bold">Controle de Gastos</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -374,35 +382,35 @@
                     <div class="row">
 
                         <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-12 mb-12">
 
                             <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Tarefas</h6>
+                            <div class="card shadow mb-4" id="cardsmenores">
+                                <div class="card-header py-3" id="cardsmenores">
+                                    <h6 class="m-0 font-weight-bold">Tarefas</h6>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="small font-weight-bold">Migração de Servidor <span
                                             class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
+                                    <div class="progress mb-4" id="progressbar">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
                                             aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 class="small font-weight-bold">Comprar Novos Equipamentos <span
                                             class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
+                                    <div class="progress mb-4" id="progressbar">
                                         <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 class="small font-weight-bold">Customização do Banco de Dados <span
                                             class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
+                                    <div class="progress mb-4" id="progressbar">
                                         <div class="progress-bar" role="progressbar" style="width: 80%"
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 class="small font-weight-bold">Correção dos Bugs <span
                                             class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
+                                    <div class="progress mb-4" id="progressbar">
                                         <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -425,7 +433,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer" id="cardsmenores">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; <a href="https://ryan-nlopes.github.io/PrimeTech/">PRIME-TECH</a> 2021</span>
@@ -474,6 +482,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="../../js/script.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
@@ -481,6 +490,17 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+        //modo noturno
+        const $html = document.querySelector('html')
+        const $checkbox = document.querySelector('#switch')
+
+        $checkbox.addEventListener('change', function() {
+        $html.classList.toggle('dark-mode')
+        })
+        //end modo noturno
+    </script>
 
 </body>
 
