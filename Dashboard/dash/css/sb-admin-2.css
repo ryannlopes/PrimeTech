@@ -39,6 +39,31 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bg-dark: #ececec;
+  --body-rodape: #242424;
+  --body-bg: #fafafa;
+  --navbar-bg: #fff;
+  --body-color: #333;
+  --card-bg: #fff;
+  --titlecard-bg: #fff;
+  --card-bg: #fff;
+  --progressbar-bg: #eaecf4;
+  --titlecard-color: #333;
+  --titlesecun-color: #ececec;
+}
+
+.dark-mode:root {
+  --bg-dark: #343a40;
+  --body-rodape: #242424;
+  --body-bg: #1a1b1f;
+  --navbar-bg: #1f2024;
+  --body-color: #fafafa;
+  --card-bg: #393939;
+  --titlecard-bg: #343434;
+  --card-bg: #343434;
+  --progressbar-bg: #606060;
+  --titlecard-color: #fafafa;
+  --titlesecun-color: #343434;
 }
 
 *,
@@ -67,6 +92,30 @@ body {
   color: #858796;
   text-align: left;
   background-color: #fff;
+}
+
+#bgnavbar{
+  background-color: var(--navbar-bg);
+}
+
+#content{
+  background-color: var(--body-bg);
+}
+
+#cardsmenores{
+  background-color: var(--card-bg);
+}
+
+#textcolor{
+  color: var(--titlecard-color);
+}
+
+#progressbar{
+  background-color: var(--progressbar-bg);
+}
+
+input::placeholder{
+  color: var(--body-color);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4491,7 +4540,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #e3e6f0;
+  border: 1px solid var(--navbar-bg);
   border-radius: 0.35rem;
 }
 
