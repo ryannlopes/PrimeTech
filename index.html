@@ -41,6 +41,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -87,7 +88,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 					<span><i class="ti-angle-down"></i></span>
 				</a>
 					<!-- Dropdown list -->
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu" style="margin-top: 7px;">
 						<li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
 						<li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
 					</ul>
@@ -102,18 +103,23 @@ FACEBOOK: https://www.facebook.com/themefisher
 				<li class="nav-item @@contact">
 					<a class="nav-link" href="contact.html">Contato</a>
 				</li>
+
+				<!-- ALTO CONTRASTE -->
+				<li id="lifooter" class="nav-item">
+					<a href="#altocontraste" class="nav-link" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">ALTO CONTRASTE</a>
+				</li>
+
+				<!-- TEMA -->
+				<label id="labeldarkmode">
+					<input type="checkbox" id="switch" class="check">
+					<span class="check" >
+						<span id="soldarkmode">🌞</span>
+						<span id="luadarkmode">🌜</span>
+					</span>
+				</label>
       		</ul>
     	</div>
   	</div>
-	  
-	<!-- TEMA -->
-	<label id="labeldarkmode">
-		<input type="checkbox" id="switch" class="check">
-		<span class="check">
-			<span id="soldarkmode">🌞</span>
-			<span id="luadarkmode">🌜</span>
-		</span>
-	</label>
 </nav>
 
 <!--====================================
@@ -160,19 +166,18 @@ FACEBOOK: https://www.facebook.com/themefisher
 				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
 					<i class="ti-paint-bucket text-primary h1"></i>
 					<h3 class="mt-4 text-capitalize h5 ">Layout</h3>
-					<p class="regular text-muted">Os nossos design são feitos para atender todos os tipos de usuários.</p>
+					<p class="regular text-muted">Nossos designers são feitos para atender todos os tipos de usuários.</p>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
 					<i class="ti-shine text-primary h1"></i>
 					<h3 class="mt-4 text-capitalize h5 ">Modos</h3>
-					<p class="regular text-muted">Implementamos o modo noturno em nossos projetos, para que
-						os usuários possam escolher o modo mais agradável. 
+					<p class="regular text-muted">Possuímos o modo noturno para uma experiência mais agradável à nossos clientes. 
 					</p>
 				</div>
 				<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
 					<i class="ti-thought text-primary h1"></i>
 					<h3 class="mt-4 text-capitalize h5 ">Suporte</h3>
-					<p class="regular text-muted">Temos suporte das 8 horas até ás 22 horas, sendo online ou presencial.</p>
+					<p class="regular text-muted">Nosso suporte é das 8h às 22h, tanto online quanto presencial.</p>
 					</p>
 				</div>
 			</div>
@@ -235,9 +240,6 @@ FACEBOOK: https://www.facebook.com/themefisher
 						"Design não é apenas o que parece e o que se sente. Design é como funciona.”
 					</p>
 					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/steve-jobs.png" alt="">
-						</li>
 						<li class="list-inline-item">Steve Jobs | Fundador da APPLE</li>
 					</ul>
 				</div>
@@ -257,25 +259,11 @@ FACEBOOK: https://www.facebook.com/themefisher
 		<div class="row">
 			<div class="col-lg-12">
 				<h2>É hora de mudar a forma de trabalhar</h2>
-				<p>Baixe o app com mais de 2 milhões de acessos. Obtenha o FCA para sempre!
-					<br>Dizemos que você não vai olhar para trás.</p>
+				<p>Entre em contato e faça seu orçamento.</p>
 				<ul class="list-inline">
 					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-apple"></i>
-							Iphone
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-android"></i>
-							Android
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="" class="btn btn-rounded-icon">
-							<i class="ti-microsoft-alt"></i>
-							Windows
+						<a href="" class="btn btn-rounded-icon" style="font-size: 16px;">
+							Teste agora
 						</a>
 					</li>
 				</ul>
@@ -300,31 +288,31 @@ FACEBOOK: https://www.facebook.com/themefisher
 					</div>
 				</div>
 				<div class="com-sm-2 col-md-2">
-					<h4 id="texttitulosfooter">Empresa</h4>
+					<h4 id="texttitulosfooter" style="margin-left: 2px;"><i class="far fa-building" style="margin-right: 2px;"></i> Empresa</h4>
 					<li id="lifooter">
-						<a href="about.html" id="subtitulosfooter">Sobre nós</a>
+						<a href="about.html" id="subtitulosfooter"><i class="fas fa-user-tie" style="margin-right: 3px;"></i> Sobre nós</a>
 					</li>
 					<li id="lifooter">
-						<a href="contact.html" id="subtitulosfooter">Contato</a>
+						<a href="contact.html" id="subtitulosfooter"><i class="fas fa-address-book" style="margin-right: 3px;"></i> Contato</a>
 					</li>
 					<li id="lifooter">
-						<a href="team.html" id="subtitulosfooter">Nosso time</a>
+						<a href="team.html" id="subtitulosfooter2"><i class="fas fa-users"></i> Nosso time</a>
 					</li>
 					<li id="lifooter">
-						<a href="dashboards.html" id="subtitulosfooter">Dashboards</a>
+						<a href="dashboards.html" id="subtitulosfooter2"><i class="fas fa-tachometer-alt" style="margin-right: 2px;"></i> Dashboards</a>
 					</li>
 				</div>
 				<div class="col-sm-3 col-md-3">
 					<h4 id="texttitulosfooter">Ache-nos</h4>
 					<p id="descAchenos">
 						<strong>Prime Tech inc.</strong>
-						<br>(19) 9999-9999
-						<br>contato@primetech.com
+						<br><i class="fas fa-phone-alt"></i> (19) 2118-8000
+						<br><i class="far fa-envelope"></i> contato@primetech.com
 						</strong>
-					</p><
+					</p>
 				</div>
 				<div class="col-sm-3 col-md-3">
-					<h4 id="texttitulosfooter">Receba nossas notícias</h4>
+					<h4 id="texttitulosfooter">Receba nossas notícias <i class="far fa-newspaper"></i></h4>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" id="imputNoticias">
@@ -372,6 +360,54 @@ FACEBOOK: https://www.facebook.com/themefisher
 <script src="plugins/google-map/gmap.js"></script>
 
 <script src="js/script.js"></script>
+
+<script>
+	(function () {
+    var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+    };
+
+    window.toggleContrast = function () { Contrast.toogle(); };
+
+    Contrast.check();
+
+    function checkContrast() {
+        this.updateView();
+    }
+
+    function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true';
+    }
+
+    function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state);
+        this.currentState = state;
+        this.updateView();
+    }
+
+    function updateViewContrast() {
+        var body = document.body;
+        if (!body) return;
+        if (this.currentState === null)
+            this.currentState = this.getState();
+        if (this.currentState)
+            body.classList.add(this.cssClass);
+        else
+            body.classList.remove(this.cssClass);
+    }
+    function toogleContrast() {
+        this.setState(!this.currentState);
+    }
+})();
+</script>
+
 </body>
 
 </html>

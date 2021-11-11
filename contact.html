@@ -41,6 +41,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -68,49 +69,54 @@ FACEBOOK: https://www.facebook.com/themefisher
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-			  <!-- HOME -->
-			  <li class="nav-item">
-				  <a class="nav-link" href="index.html">Home</a>
-			  </li>
+				<!-- HOME -->
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
 
-			  <!-- DASHBOARDS -->
-			  <li class="nav-item">
-				  <a class="nav-link" href="dashboards.html">Dashboards</a>
-			  </li>
+				<!-- DASHBOARDS -->
+				<li class="nav-item">
+					<a class="nav-link" href="dashboards.html">Dashboards</a>
+				</li>
 
-			  <!-- PÁGINAS -->
-			  <li class="nav-item dropdown @@pages">
-			  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Páginas
-				  <span><i class="ti-angle-down"></i></span>
-			  </a>
-				  <!-- Dropdown list -->
-				  <ul class="dropdown-menu">
-					  <li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
-					  <li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
-				  </ul>
-			  </li>
+				<!-- PÁGINAS -->
+				<li class="nav-item dropdown @@pages">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Páginas
+					<span><i class="ti-angle-down"></i></span>
+				</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu" style="margin-top: 7px;">
+						<li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
+						<li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
+					</ul>
+				</li>
 
-			  <!-- SOBRE NÓS -->
-			  <li class="nav-item @@about">
-				  <a class="nav-link" href="about.html">Sobre nós</a>
-			  </li>
+				<!-- SOBRE NÓS -->
+				<li class="nav-item @@about">
+					<a class="nav-link" href="about.html">Sobre nós</a>
+				</li>
 
-			  <!-- CONTATO -->
+			  	<!-- CONTATO -->
 				<li class="nav-item @@contact active">
 					<a class="nav-link" href="contact.html">Contato</a>
 				</li>
+
+				<!-- ALTO CONTRASTE -->
+				<li id="lifooter" class="nav-item">
+					<a href="#altocontraste" class="nav-link" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">ALTO CONTRASTE</a>
+				</li>
+
+				<!-- TEMA -->
+				<label id="labeldarkmode">
+					<input type="checkbox" id="switch" class="check">
+					<span class="check">
+						<span id="soldarkmode">🌞</span>
+						<span id="luadarkmode">🌜</span>
+					</span>
+				</label>
       		</ul>
     	</div>
   	</div>
-
-	<!-- TEMA -->
-	<label id="labeldarkmode">
-		<input type="checkbox" id="switch" class="check">
-		<span class="check">
-			<span id="soldarkmode">🌞</span>
-			<span id="luadarkmode">🌜</span>
-		</span>
-	</label>
 </nav>
 <!--================================
 =            Page Title            =
@@ -220,31 +226,31 @@ FACEBOOK: https://www.facebook.com/themefisher
 					</div>
 				</div>
 				<div class="com-sm-2 col-md-2">
-					<h4 id="texttitulosfooter">Empresa</h4>
+					<h4 id="texttitulosfooter" style="margin-left: 2px;"><i class="far fa-building" style="margin-right: 2px;"></i> Empresa</h4>
 					<li id="lifooter">
-						<a href="about.html" id="subtitulosfooter">Sobre nós</a>
+						<a href="about.html" id="subtitulosfooter"><i class="fas fa-user-tie" style="margin-right: 3px;"></i> Sobre nós</a>
 					</li>
 					<li id="lifooter">
-						<a href="contact.html" id="subtitulosfooter">Contato</a>
+						<a href="contact.html" id="subtitulosfooter"><i class="fas fa-address-book" style="margin-right: 3px;"></i> Contato</a>
 					</li>
 					<li id="lifooter">
-						<a href="team.html" id="subtitulosfooter">Nosso time</a>
+						<a href="team.html" id="subtitulosfooter2"><i class="fas fa-users"></i> Nosso time</a>
 					</li>
 					<li id="lifooter">
-						<a href="dashboards.html" id="subtitulosfooter">Dashboards</a>
+						<a href="dashboards.html" id="subtitulosfooter2"><i class="fas fa-tachometer-alt" style="margin-right: 2px;"></i> Dashboards</a>
 					</li>
 				</div>
 				<div class="col-sm-3 col-md-3">
 					<h4 id="texttitulosfooter">Ache-nos</h4>
 					<p id="descAchenos">
 						<strong>Prime Tech inc.</strong>
-						<br>(19) 9999-9999
-						<br>contato@primetech.com
+						<br><i class="fas fa-phone-alt"></i> (19) 2118-8000
+						<br><i class="far fa-envelope"></i> contato@primetech.com
 						</strong>
-					</p><
+					</p>
 				</div>
 				<div class="col-sm-3 col-md-3">
-					<h4 id="texttitulosfooter">Receba nossas notícias</h4>
+					<h4 id="texttitulosfooter">Receba nossas notícias <i class="far fa-newspaper"></i></h4>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" id="imputNoticias">
@@ -292,6 +298,54 @@ FACEBOOK: https://www.facebook.com/themefisher
 <script src="plugins/google-map/gmap.js"></script>
 
 <script src="js/script.js"></script>
+
+<script>
+	(function () {
+    var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+    };
+
+    window.toggleContrast = function () { Contrast.toogle(); };
+
+    Contrast.check();
+
+    function checkContrast() {
+        this.updateView();
+    }
+
+    function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true';
+    }
+
+    function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state);
+        this.currentState = state;
+        this.updateView();
+    }
+
+    function updateViewContrast() {
+        var body = document.body;
+        if (!body) return;
+        if (this.currentState === null)
+            this.currentState = this.getState();
+        if (this.currentState)
+            body.classList.add(this.cssClass);
+        else
+            body.classList.remove(this.cssClass);
+    }
+    function toogleContrast() {
+        this.setState(!this.currentState);
+    }
+})();
+</script>
+
 </body>
 
 </html>

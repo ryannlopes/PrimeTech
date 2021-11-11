@@ -41,6 +41,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -68,49 +69,54 @@ FACEBOOK: https://www.facebook.com/themefisher
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-			  <!-- HOME -->
-			  <li class="nav-item">
-				  <a class="nav-link" href="index.html">Home</a>
-			  </li>
+				<!-- HOME -->
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
 
-			  <!-- DASHBOARDS -->
-			  <li class="nav-item">
-				  <a class="nav-link" href="dashboards.html">Dashboards</a>
-			  </li>
+				<!-- DASHBOARDS -->
+				<li class="nav-item">
+					<a class="nav-link" href="dashboards.html">Dashboards</a>
+				</li>
 
-			  <!-- PÁGINAS -->
-			  <li class="nav-item dropdown @@pages active">
-			  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Páginas
-				  <span><i class="ti-angle-down"></i></span>
-			  </a>
-				  <!-- Dropdown list -->
-				  <ul class="dropdown-menu">
-					  <li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
-					  <li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
-				  </ul>
-			  </li>
+				<!-- PÁGINAS -->
+				<li class="nav-item dropdown @@pages active">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Páginas
+					<span><i class="ti-angle-down"></i></span>
+				</a>
+					<!-- Dropdown list -->
+					<ul class="dropdown-menu" style="margin-top: 7px;">
+						<li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
+						<li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
+					</ul>
+				</li>
 
-			  <!-- SOBRE NÓS -->
-			  <li class="nav-item @@about">
-				  <a class="nav-link" href="about.html">Sobre nós</a>
-			  </li>
+				<!-- SOBRE NÓS -->
+				<li class="nav-item @@about">
+					<a class="nav-link" href="about.html">Sobre nós</a>
+				</li>
 
-			  <!-- CONTATO -->
+				<!-- CONTATO -->
 				<li class="nav-item @@contact">
 					<a class="nav-link" href="contact.html">Contato</a>
 				</li>
+
+				<!-- ALTO CONTRASTE -->
+				<li id="lifooter" class="nav-item">
+					<a href="#altocontraste" class="nav-link" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">ALTO CONTRASTE</a>
+				</li>
+
+				<!-- TEMA -->
+				<label id="labeldarkmode">
+					<input type="checkbox" id="switch" class="check">
+					<span class="check">
+						<span id="soldarkmode">🌞</span>
+						<span id="luadarkmode">🌜</span>
+					</span>
+				</label>
       		</ul>
     	</div>
   	</div>
-
-	<!-- TEMA -->
-	<label id="labeldarkmode">
-		<input type="checkbox" id="switch" class="check">
-		<span class="check">
-			<span id="soldarkmode">🌞</span>
-			<span id="luadarkmode">🌜</span>
-		</span>
-	</label>
 </nav>
 
 <!--================================
@@ -149,10 +155,11 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- position -->
 	<cite>Fundador & CEO</cite>
 	<!-- Description -->
-	<p>Diretor executivo, investidor e filantropo, que ficou conhecido por fundar, junto com Guilherme Gomes a PrimeTech, a maior e mais conhecida empresa de software do mundo em termos de valor de mercado.</p>
+	<p style="text-align: justify;">Diretor executivo, investidor e filantropo, que ficou conhecido por fundar, junto com Guilherme Gomes a PrimeTech, a maior e mais conhecida empresa de software do mundo em termos de valor de mercado.</p>
 	<!-- Social Sites -->
 	<ul class="list-inline social-links">
 		<li class="list-inline-item"><a href="https://www.facebook.com/ryan.passarolivre"><i class="ti-facebook"></i></a></li>
+		<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 		<li class="list-inline-item"><a href="https://www.instagram.com/ryan_nlopes/"><i class="ti-instagram"></i></a></li>
 		<li class="list-inline-item"><a href="https://www.linkedin.com/in/ryan-nicolau-lopes-8b3030167/"><i class="ti-linkedin"></i></a></li>
 	</ul>
@@ -168,10 +175,11 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- position -->
 	<cite>Fundador & CEO</cite>
 	<!-- Description -->
-	<p id="teamg">Programador desde os seus 11 anos e empresário brasileiro, que ficou conhecido internacionalmente por ser um dos fundadores da PrimeTech e por algumas ONG’s que criou para ajudar os menos favorecidos.</p>
+	<p style="text-align: justify;">Programador desde os seus 11 anos, empresário brasileiro, que ficou conhecido internacionalmente por ser um dos fundadores da PrimeTech e por algumas ONG’s que criou para ajudar os menos favorecidos.</p>
 	<!-- Social Sites -->
 	<ul class="list-inline social-links">
 		<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
+		<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 		<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
 		<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-linkedin"></i></a></li>
 	</ul>
@@ -191,12 +199,12 @@ FACEBOOK: https://www.facebook.com/themefisher
 			<div class="col-lg-12">
 				<div class="section-title">
 					<h2>Marketing Team</h2>
-					<p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Conheça um pouco sobre nosso time de marketing</p>
+					<p>Conheça um pouco sobre nosso time de marketing</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4 col-md-6" id="teamleft">
+			<div class="col-lg-6 col-md-6">
 				<!-- Team -->
 <div class="team-sm">
 	<!-- Team Member Image -->
@@ -206,9 +214,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 		<div class="social-links">
 			<ul class="list-inline">
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -217,10 +225,10 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- Position -->
 	<cite>Chefe de Marketing</cite>
 	<!-- Description -->
-	<p>Designer filho de uma estilista famosa, amante dos animais, empresário em diversos ramos e acionista da bolsa de valores, conhecido como “rei do networking”, por gerenciar ótimas campanhas de marketing para famosas marcas internacionais e como um ótimo líder de projetos.</p>
+	<p style="text-align: justify;">Designer filho de uma estilista famosa, amante dos animais, empresário em diversos ramos e acionista da bolsa de valores, conhecido como “rei do networking”, por gerenciar ótimas campanhas de marketing para famosas marcas internacionais e como um ótimo líder de projetos.</p>
 </div>
 			</div>
-			<div class="col-lg-4 col-md-6" id="teamrigth">
+			<div class="col-lg-6 col-md-6">
 				<!-- Team -->
 <div class="team-sm">
 	<!-- Team Member Image -->
@@ -230,9 +238,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 		<div class="social-links">
 			<ul class="list-inline">
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -241,7 +249,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- Position -->
 	<cite>Gerente de Marketing</cite>
 	<!-- Description -->
-	<p>Viajante e agente de modelos, conhecido pela sua agência de modelo que abrange o mundo inteiro, autor/criador do livro “Do normal ao diferente, sem perder sua essência” e do método “Até o destaque”.</p>
+	<p style="text-align: justify;">Viajante e agente de modelos, conhecido pela sua agência de modelo que abrange o mundo inteiro, autor/criador do livro “Do normal ao diferente, sem perder sua essência” e do método “Até o destaque”.</p>
 </div>
 			</div>
 		</div>
@@ -258,12 +266,12 @@ FACEBOOK: https://www.facebook.com/themefisher
 			<div class="col-lg-12">
 				<div class="section-title">
 					<h2>Design Team</h2>
-					<p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Sobre nossos profssionais de design</p>
+					<p>Sobre nossos profissionais de design</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4 col-md-6" id="teamleft">
+			<div class="col-lg-6 col-md-6">
 				<!-- Team -->
 <div class="team-sm">
 	<!-- Team Member Image -->
@@ -273,9 +281,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 		<div class="social-links">
 			<ul class="list-inline">
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -284,10 +292,10 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- Position -->
 	<cite>Chefe de Design</cite>
 	<!-- Description -->
-	<p>Sucessor de uma empresa de vestimentas, designer e modelo, conhecido por criar a marca de roupas “Carv’s” que hoje esta presente em +70 países.</p>
+	<p style="text-align: justify;">Sucessor de uma empresa de vestimentas, designer e modelo, conhecido por criar a marca de roupas “Carv’s” que hoje esta presente em +70 países.</p>
 </div>
 			</div>
-			<div class="col-lg-4 col-md-6" id="teamrigth">
+			<div class="col-lg-6 col-md-6">
 				<!-- Team -->
 <div class="team-sm">
 	<!-- Team Member Image -->
@@ -297,9 +305,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 		<div class="social-links">
 			<ul class="list-inline">
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="fab fa-twitter"></i></a></li>
 				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
+				<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -308,7 +316,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 	<!-- Position -->
 	<cite>Gerente de Design</cite>
 	<!-- Description -->
-	<p>Analista de sistemas, criador e desenvolvedor full stack, conhecido por atuar/ajudar a desenvolver vários sistemas famosos que abrangem empresas de grande porte nacionais e internacionais, criador de diversas bibliotecas nas mais diversas linguagens de programação.</p>
+	<p style="text-align: justify;">Analista de sistemas, criador e desenvolvedor full stack, conhecido por atuar/ajudar a desenvolver vários sistemas famosos que abrangem empresas de grande porte nacionais e internacionais, criador de diversas bibliotecas nas mais diversas linguagens de programação.</p>
 </div>
 			</div>
 		</div>
@@ -325,7 +333,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 =            Section comment            =
 ======================================-->
 
-<section class="section cta-hire bg-gary">
+<section class="section cta-hire bg-gary" style="padding-top: 0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -334,7 +342,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 				<!-- Job Description -->
 				<p>Venha ser um colaborador da PrimeTech!</p>
 				<!-- Action Button -->
-				<a href="carrer.html" class="mt-3 btn btn-main-md">Trabalhe conosco</a>
+				<a href="carreiras.html" class="mt-3 btn btn-main-md">Trabalhe conosco</a>
 			</div>
 		</div>
 	</div>
@@ -359,31 +367,31 @@ FACEBOOK: https://www.facebook.com/themefisher
 					</div>
 				</div>
 				<div class="com-sm-2 col-md-2">
-					<h4 id="texttitulosfooter">Empresa</h4>
+					<h4 id="texttitulosfooter" style="margin-left: 2px;"><i class="far fa-building" style="margin-right: 2px;"></i> Empresa</h4>
 					<li id="lifooter">
-						<a href="about.html" id="subtitulosfooter">Sobre nós</a>
+						<a href="about.html" id="subtitulosfooter"><i class="fas fa-user-tie" style="margin-right: 3px;"></i> Sobre nós</a>
 					</li>
 					<li id="lifooter">
-						<a href="contact.html" id="subtitulosfooter">Contato</a>
+						<a href="contact.html" id="subtitulosfooter"><i class="fas fa-address-book" style="margin-right: 3px;"></i> Contato</a>
 					</li>
 					<li id="lifooter">
-						<a href="team.html" id="subtitulosfooter">Nosso time</a>
+						<a href="team.html" id="subtitulosfooter2"><i class="fas fa-users"></i> Nosso time</a>
 					</li>
 					<li id="lifooter">
-						<a href="dashboards.html" id="subtitulosfooter">Dashboards</a>
+						<a href="dashboards.html" id="subtitulosfooter2"><i class="fas fa-tachometer-alt" style="margin-right: 2px;"></i> Dashboards</a>
 					</li>
 				</div>
 				<div class="col-sm-3 col-md-3">
 					<h4 id="texttitulosfooter">Ache-nos</h4>
 					<p id="descAchenos">
 						<strong>Prime Tech inc.</strong>
-						<br>(19) 9999-9999
-						<br>contato@primetech.com
+						<br><i class="fas fa-phone-alt"></i> (19) 2118-8000
+						<br><i class="far fa-envelope"></i> contato@primetech.com
 						</strong>
-					</p><
+					</p>
 				</div>
 				<div class="col-sm-3 col-md-3">
-					<h4 id="texttitulosfooter">Receba nossas notícias</h4>
+					<h4 id="texttitulosfooter">Receba nossas notícias <i class="far fa-newspaper"></i></h4>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" id="imputNoticias">
@@ -431,6 +439,54 @@ FACEBOOK: https://www.facebook.com/themefisher
 <script src="plugins/google-map/gmap.js"></script>
 
 <script src="js/script.js"></script>
+
+<script>
+	(function () {
+    var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+    };
+
+    window.toggleContrast = function () { Contrast.toogle(); };
+
+    Contrast.check();
+
+    function checkContrast() {
+        this.updateView();
+    }
+
+    function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true';
+    }
+
+    function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state);
+        this.currentState = state;
+        this.updateView();
+    }
+
+    function updateViewContrast() {
+        var body = document.body;
+        if (!body) return;
+        if (this.currentState === null)
+            this.currentState = this.getState();
+        if (this.currentState)
+            body.classList.add(this.cssClass);
+        else
+            body.classList.remove(this.cssClass);
+    }
+    function toogleContrast() {
+        this.setState(!this.currentState);
+    }
+})();
+</script>
+
 </body>
 
 </html>

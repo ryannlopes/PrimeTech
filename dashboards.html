@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -72,7 +73,7 @@
 					<span><i class="ti-angle-down"></i></span>
 				</a>
 					<!-- Dropdown list -->
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu" style="margin-top: 7px;">
 						<li><a class="dropdown-item @@team" href="team.html">Nosso Time</a></li>
 						<li><a class="dropdown-item @@career" href="carreiras.html">Carreira</a></li>
 					</ul>
@@ -87,18 +88,23 @@
 				<li class="nav-item @@contact">
 					<a class="nav-link" href="contact.html">Contato</a>
 				</li>
+
+				<!-- ALTO CONTRASTE -->
+				<li id="lifooter" class="nav-item">
+					<a href="#altocontraste" class="nav-link" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">ALTO CONTRASTE</a>
+				</li>
+
+				<!-- TEMA -->
+				<label id="labeldarkmode">
+					<input type="checkbox" id="switch" class="check">
+					<span class="check">
+						<span id="soldarkmode">🌞</span>
+						<span id="luadarkmode">🌜</span>
+					</span>
+				</label>
       		</ul>
     	</div>
   	</div>
-	  
-	<!-- TEMA -->
-	<label id="labeldarkmode">
-		<input type="checkbox" id="switch" class="check">
-		<span class="check">
-			<span id="soldarkmode">🌞</span>
-			<span id="luadarkmode">🌜</span>
-		</span>
-	</label>
 </nav>
 <!--====  End of Navbar  ====-->
 
@@ -185,7 +191,7 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Gerenciamento empresarial</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Free</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Gratuito</div>
 			</div>
 			</div>
 		</div>
@@ -202,8 +208,8 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Gerenciamento financeiro</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">$ 8,00</div>
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Premium</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">R$ 8,60</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Pago</div>
 			</div>
 			</div>
 		</div>
@@ -220,7 +226,7 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Administração - Bootstrap 4</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Free</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Gratuito</div>
 			</div>
 			</div>
 		</div>
@@ -228,7 +234,7 @@
 		<div _ngcontent-serverapp-c72="" class="col-lg-4 col-md-6 mb-5">
 			<div class="zoom">
 			<a _ngcontent-serverapp-c72="" tabindex="0" href="#" class="d-block rounded-3 lift lift-lg mb-3 pointer buttoncent" style="--aspect-ratio: 1.5;" data-cy="sb-admin-2">
-				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://assets.startbootstrap.com/img/screenshots/premium/sb-admin-pro-angular.medium.webp">
+				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://themewagon.com/wp-content/uploads/2019/12/next-angular-8-1.jpg">
 				<button class="button"><p class="textbutton">Live Preview</p></button>
 			</a>
 			</div>
@@ -237,8 +243,8 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Administração PRO - Angular</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">$ 12,00</div>
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Premium</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">R$ 15,00</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Pago</div>
 			</div>
 			</div>
 		</div>
@@ -246,7 +252,7 @@
 		<div _ngcontent-serverapp-c72="" class="col-lg-4 col-md-6 mb-5">
 			<div class="zoom">
 			<a _ngcontent-serverapp-c72="" tabindex="0" href="#" class="d-block rounded-3 lift lift-lg mb-3 pointer buttoncent" style="--aspect-ratio: 1.5;" data-cy="sb-admin-2">
-				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://demo.themesberg.com/volt/assets/img/pages/overview.jpg">
+				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://themewagon.com/wp-content/uploads/2020/10/DeskApp-2.png">
 				<button class="button"><p class="textbutton">Live Preview</p></button>
 			</a>
 			</div>
@@ -255,8 +261,8 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Gerenciamento financeiro - Bootstrap 5</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">$ 18,00</div>
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Premium</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">R$ 23,90</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Pago</div>
 			</div>
 			</div>
 		</div>
@@ -264,7 +270,7 @@
 		<div _ngcontent-serverapp-c72="" class="col-lg-4 col-md-6 mb-5">
 			<div class="zoom">
 			<a _ngcontent-serverapp-c72="" tabindex="0" href="#" class="d-block rounded-3 lift lift-lg mb-3 pointer buttoncent" style="--aspect-ratio: 1.5;" data-cy="sb-admin-2">
-				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://assets.startbootstrap.com/img/screenshots/templates/sb-admin-angular.medium.webp">
+				<img _ngcontent-serverapp-c72="" class="img-fluid rounded-3" src="https://themewagon.com/wp-content/uploads/2019/07/quixlab-1.jpg">
 				<button class="button"><p class="textbutton">Live Preview</p></button>
 			</a>
 			</div>
@@ -273,7 +279,7 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Administração - Angular</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Free</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Gratuito</div>
 			</div>
 			</div>
 		</div>
@@ -290,7 +296,7 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Administração - Bootstrap 4</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Free</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Gratuito</div>
 			</div>
 			</div>
 		</div>
@@ -307,8 +313,8 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Admin - Bootstrap 4 HTML5</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">$ 20,00</div>
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Premium</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">R$ 30,00</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Pago</div>
 			</div>
 			</div>
 		</div>
@@ -325,7 +331,7 @@
 				<div _ngcontent-serverapp-c72="" class="h6 mb-0">Admin - Bootstrap 4 e JS</div>
 			</div>
 			<div _ngcontent-serverapp-c72="" class="text-end flex-shrink-0">
-				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Free</div>
+				<div _ngcontent-serverapp-c72="" class="badge bg-green-soft text-green" id="pricedash">Gratuito</div>
 			</div>
 			</div>
 		</div>
@@ -336,7 +342,7 @@
 <!--============================
 =            Footer            =
 =============================-->
-<footer id="footer">
+<footer>
 	<div class="footer-main">
 		<div class="container">
 			<div class="row">
@@ -349,31 +355,31 @@
 					</div>
 				</div>
 				<div class="com-sm-2 col-md-2">
-					<h4 id="texttitulosfooter">Empresa</h4>
+					<h4 id="texttitulosfooter" style="margin-left: 2px;"><i class="far fa-building" style="margin-right: 2px;"></i> Empresa</h4>
 					<li id="lifooter">
-						<a href="about.html" id="subtitulosfooter">Sobre nós</a>
+						<a href="about.html" id="subtitulosfooter"><i class="fas fa-user-tie" style="margin-right: 3px;"></i> Sobre nós</a>
 					</li>
 					<li id="lifooter">
-						<a href="contact.html" id="subtitulosfooter">Contato</a>
+						<a href="contact.html" id="subtitulosfooter"><i class="fas fa-address-book" style="margin-right: 3px;"></i> Contato</a>
 					</li>
 					<li id="lifooter">
-						<a href="team.html" id="subtitulosfooter">Nosso time</a>
+						<a href="team.html" id="subtitulosfooter2"><i class="fas fa-users"></i> Nosso time</a>
 					</li>
 					<li id="lifooter">
-						<a href="dashboards.html" id="subtitulosfooter">Dashboards</a>
+						<a href="dashboards.html" id="subtitulosfooter2"><i class="fas fa-tachometer-alt" style="margin-right: 2px;"></i> Dashboards</a>
 					</li>
 				</div>
 				<div class="col-sm-3 col-md-3">
 					<h4 id="texttitulosfooter">Ache-nos</h4>
 					<p id="descAchenos">
 						<strong>Prime Tech inc.</strong>
-						<br>(19) 9999-9999
-						<br>contato@primetech.com
+						<br><i class="fas fa-phone-alt"></i> (19) 2118-8000
+						<br><i class="far fa-envelope"></i> contato@primetech.com
 						</strong>
-					</p><
+					</p>
 				</div>
 				<div class="col-sm-3 col-md-3">
-					<h4 id="texttitulosfooter">Receba nossas notícias</h4>
+					<h4 id="texttitulosfooter">Receba nossas notícias <i class="far fa-newspaper"></i></h4>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" id="imputNoticias">
@@ -421,6 +427,53 @@
 <script src="plugins/google-map/gmap.js"></script>
 
 <script src="js/script.js"></script>
+
+<script>
+	(function () {
+    var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+    };
+
+    window.toggleContrast = function () { Contrast.toogle(); };
+
+    Contrast.check();
+
+    function checkContrast() {
+        this.updateView();
+    }
+
+    function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true';
+    }
+
+    function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state);
+        this.currentState = state;
+        this.updateView();
+    }
+
+    function updateViewContrast() {
+        var body = document.body;
+        if (!body) return;
+        if (this.currentState === null)
+            this.currentState = this.getState();
+        if (this.currentState)
+            body.classList.add(this.cssClass);
+        else
+            body.classList.remove(this.cssClass);
+    }
+    function toogleContrast() {
+        this.setState(!this.currentState);
+    }
+})();
+</script>
 
 </body>
 </html>
